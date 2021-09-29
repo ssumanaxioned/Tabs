@@ -225,7 +225,7 @@ section {
   align-items: center;
 }
 
-.tab-btn {
+.tab button {
   flex-basis: 33.33%;
   padding: 0.5em 0;
   border: none;
@@ -234,11 +234,19 @@ section {
   font-weight: 400;
   font-size: 18px;
 }
+.tab button:hover {
+  background-color: gray;
+}
+
+.tab button.active {
+  border: 1px solid black;
+  border-bottom: none;
+}
 
 .tab-content {
   margin-top: 1em;
   border: 1px solid gray;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
